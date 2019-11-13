@@ -3,9 +3,9 @@ version: '3.1'
 services:
   wordpress:
     image: wordpress
-    restart: always
+    container_name: planholmen-wp
     volumes:
-        - ./html:/var/www/html
+        - ./theme:/var/www/html/wp-content/themes/planholmen
     ports:
         - 80:80
     environment:
@@ -16,7 +16,7 @@ services:
 
   db:
     image: mysql:5.7
-    restart: always
+    container_name: planholmen-db
     environment:
         MYSQL_DATABASE: planholmen
         MYSQL_USER: planholmen
