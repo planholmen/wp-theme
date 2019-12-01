@@ -12,11 +12,13 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
-mix.sass('resources/sass/app.sass', 'theme/assets/css')
+mix.sass('resources/sass/app.scss', 'theme/assets/css')
     .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.config.js') ],
     });
+
+mix.copy('resources/fonts/', 'theme/assets/css');
 
 // Full API
 // mix.js(src, output);
