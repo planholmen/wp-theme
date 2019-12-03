@@ -12,7 +12,7 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
-mix.sass('resources/sass/app.scss', 'theme/assets/css')
+mix.sass('resources/sass/app.scss', 'theme/style.css')
     .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.config.js') ],
