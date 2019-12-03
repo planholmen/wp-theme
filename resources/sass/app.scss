@@ -85,6 +85,7 @@ header, .spacer {
   width: 200px;
   &:hover {
     border: 1px solid $planholmen;
+    background: none;
   }
 }
 
@@ -114,6 +115,18 @@ header, .spacer {
   clear: both;
   background: #0b0b0b;
   color: white;
+}
+
+.footer div.w-full {
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: white;
+  transition: 0.2s linear;
+  &:hover {
+    color: $planholmen;
+  }
 }
 
 .social-links li {

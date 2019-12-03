@@ -11488,6 +11488,7 @@ header, .spacer {
 
 .nav ul li ul li:hover {
   border: 1px solid #ed0d87;
+  background: none;
 }
 
 .content h2 {
@@ -11516,6 +11517,20 @@ header, .spacer {
   clear: both;
   background: #0b0b0b;
   color: white;
+}
+
+.footer div.w-full {
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: white;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.footer a:hover {
+  color: #ed0d87;
 }
 
 .social-links li {
