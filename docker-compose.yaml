@@ -5,7 +5,7 @@ services:
     image: wordpress
     container_name: planholmen-wp
     volumes:
-        - ./theme:/var/www/html/wp-content/themes/planholmen
+        - ./planholmen:/var/www/html/wp-content/themes/planholmen
     ports:
         - 80:80
     environment:

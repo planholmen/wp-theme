@@ -1,8 +1,8 @@
 <div class="header-container">
     <header class="header my-4 mx-auto px-6">
-        <a href="/planholmen-v2/mock/index.html">
+        <a href="/">
             <div class="logo h-full ml-4 float-left flex items-center">
-                <img class="h-full" src="wp-content/themes/planholmen/assets/images/Plan-Holmen-Logo.png" alt="PLan Holmen Logo">
+                <img class="h-full" src="/wp-content/themes/planholmen/assets/images/Plan-Holmen-Logo.png" alt="PLan Holmen Logo">
                 <p class="ml-4">PLan Holmen</p>
             </div>
         </a>
