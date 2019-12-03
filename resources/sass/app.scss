@@ -55,7 +55,7 @@ header, .spacer {
 .nav ul li {
   padding: 10px 15px;
   cursor: pointer;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
   transition: 0.2s linear;
   &:hover {
     transition: 0.2s linear;
@@ -64,6 +64,27 @@ header, .spacer {
     background: -webkit-linear-gradient(bottom, rgba(237, 13, 138, 0.05), rgba(237, 13, 138, 0.0) 30%);
     background: -moz-linear-gradient(bottom, rgba(237, 13, 138, 0.05), rgba(237, 13, 138, 0.0) 30%);
     background: linear-gradient(to top, rgba(237, 13, 138, 0.05), rgba(237, 13, 138, 0.0) 30%);
+  }
+}
+
+.nav ul li ul {
+  display: none;
+  position: absolute;
+  background: #ebebeb;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.nav ul li:hover > ul,
+.nav ul li ul:hover {
+  display: block;
+}
+
+.nav ul li ul li {
+  border: 1px solid transparent;
+  width: 200px;
+  &:hover {
+    border: 1px solid $planholmen;
   }
 }
 
