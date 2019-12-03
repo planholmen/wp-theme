@@ -1,3 +1,15 @@
+/*
+Theme Name: PLan Holmen
+Theme URI: https://github.com/gustavkauman/planholmen-v2
+Author: Gustav Utke Kauman
+Author URI: https://github.com/gustavkauman/
+Description: WP theme for the PLan Holmen team
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: planholmen
+*/
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -11421,6 +11433,7 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
+  background-color: #fcfcfc;
 }
 
 .main {
