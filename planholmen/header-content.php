@@ -7,15 +7,6 @@
             </div>
         </a>
         <div class="nav block h-full float-right">
-            <!--
-            <ul class="h-full flex justify-end items-center">
-                <li>Årets kursus</li>
-                <li>Tidligere kurser</li>
-                <li>Gode råd</li>
-                <li>Teamet</li>
-                <li>Kontakt</li>
-            </ul>
-            -->
             <?php
                 wp_nav_menu([
                     'theme_location' => 'header-menu',
