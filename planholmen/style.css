@@ -11416,7 +11416,7 @@ video {
 @font-face {
   font-family: "NeoTech";
 
-  src: url("NeoTech.eot?#iefix") format("embedded-opentype"), url("NeoTech.otf") format("opentype"), url("NeoTech.woff") format("woff"), url("NeoTech.ttf") format("truetype"), url("NeoTech.svg#NeoTech") format("svg");
+  src: url("assets/css/NeoTech.eot?#iefix") format("embedded-opentype"), url("assets/css/NeoTech.otf") format("opentype"), url("assets/css/NeoTech.woff") format("woff"), url("assets/css/NeoTech.ttf") format("truetype"), url("assets/css/NeoTech.svg#NeoTech") format("svg");
 
   font-weight: normal;
 
@@ -11523,6 +11523,16 @@ header, .spacer {
 
 .content p {
   margin: 10px auto;
+}
+
+.content p a {
+  color: black;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.content p a:hover {
+  color: #ed0d87;
 }
 
 .footer {
