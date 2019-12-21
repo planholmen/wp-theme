@@ -65,7 +65,7 @@ header, .spacer {
   font-size: 1.5rem;
 }
 
-.nav ul li {
+.nav ul li a {
   padding: 10px 15px;
   cursor: pointer;
   border-bottom: 1px solid transparent;
@@ -84,8 +84,7 @@ header, .spacer {
   display: none;
   position: absolute;
   background: #ebebeb;
-  margin-left: -15px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .nav ul li:hover > ul,
@@ -93,7 +92,8 @@ header, .spacer {
   display: block;
 }
 
-.nav ul li ul li {
+.nav ul li ul li a {
+  display: block;
   border: 1px solid transparent;
   width: 200px;
   &:hover {
