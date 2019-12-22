@@ -11535,6 +11535,11 @@ header, .spacer {
   padding-top: 10px;
 }
 
+.small-menu ul li a {
+  width: 100%;
+  display: block;
+}
+
 .small-menu ul li ul li:last-child {
   padding-bottom: 0;
 }
