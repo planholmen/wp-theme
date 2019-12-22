@@ -12,7 +12,8 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
-mix.sass('resources/sass/app.scss', 'planholmen/style.css')
+mix.js('resources/js/app.js', 'planholmen/assets/js/app.js')
+    .sass('resources/sass/app.scss', 'planholmen/style.css')
     .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.config.js') ],

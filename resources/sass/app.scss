@@ -102,6 +102,39 @@ header, .spacer {
   }
 }
 
+.burger-menu {
+  cursor: pointer;
+}
+
+.small-menu {
+  background-color: lightgray;
+}
+
+.small-menu ul li {
+  padding: 10px 0 10px 10px;
+  border-top: 1px solid darkgray;
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.small-menu ul li ul {
+  padding-top: 10px;
+  margin-left: -10px;
+}
+
+.small-menu ul li ul li {
+  padding-left: 30px;
+  &:first-child {
+    border-top: 1px solid darkgray;
+    padding-top: 10px;
+  }
+}
+
+.small-menu ul li ul li:last-child {
+  padding-bottom: 0;
+}
+
 .content h2 {
   font-weight: bold;
   font-size: 2rem;

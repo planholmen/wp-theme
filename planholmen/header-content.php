@@ -7,16 +7,30 @@
             </div>
         </a>
         <div class="nav block h-full float-right">
+            <div class="burger-menu h-full block flex items-center text-4xl md:hidden">
+                <ion-icon id="menu-icon" name="menu" class="block"></ion-icon>
+                <ion-icon id="close-icon" name="close" class="hidden"></ion-icon>
+            </div>
             <?php
                 wp_nav_menu([
                     'theme_location' => 'header-menu',
                     'menu_class' => 'h-full flex justify-end items-center',
                     'fallback_cb' => false,
-                    'container_class' => 'h-full',
+                    'container_class' => 'h-full hidden md:block',
                     'depth' => 2
                 ]);
             ?>
         </div>
     </header>
+    <div class="small-menu" style="display: none;">
+        <?php
+            wp_nav_menu([
+                'theme_location' => 'header-menu',
+                'menu_class' => 'flex flex-col',
+                'fallback_cb' => false,
+                'depth' => 2
+            ]);
+        ?>
+    </div>
 </div>
 <div class="spacer my-4 mx-auto"></div>
