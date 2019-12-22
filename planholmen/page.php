@@ -18,7 +18,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
     <main class="main pb-12 flex-1">
-        <div class="content w-10/12 mt-10 mx-auto">
+        <div class="content w-11/12 md:w-10/12 mt-10 mx-auto">
 
             <!-- Begin Page Content -->
             <?php the_content(); ?>
