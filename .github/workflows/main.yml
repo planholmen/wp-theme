@@ -15,5 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Install npm
+      run: npm install
     - name: Create production css and JS
       run: npm run prod
