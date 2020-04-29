@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 
 on:
   push:
@@ -9,13 +9,19 @@ on:
       - master
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v1
-    - name: Install npm
-      run: npm install
-    - name: Create production css and JS
-      run: npm run prod
+    - uses: Evaneos/ssh-action@v0.1.0
+    - name: SSH Deploy
+      with:
+        private_key: ${{ secrets.DEPLOY_KEY }}
+        hosts: ssh.planholmen.dk
+        user: planholmen.dk
+        port: 22
+        commands: |
+          cd /var/www/planholmen.dk/wp/wp-content/themes
+          git pull origin master
