@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-    - uses: Evaneos/ssh-action@v0.1.0
     - name: SSH Deploy
+      uses: Evaneos/ssh-action@v0.1.0
       with:
         private_key: ${{ secrets.DEPLOY_KEY }}
         hosts: ssh.planholmen.dk
