@@ -20,6 +20,9 @@
                     'depth' => 2
                 ]);
             ?>
+            <?php if (is_woocommerce()) : ?>
+                <a href="<?= wc_get_cart_url() ?>">Kurv</a>
+            <? endif; ?>
         </div>
     </header>
     <div class="small-menu" style="display: none;">

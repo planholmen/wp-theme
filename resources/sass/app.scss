@@ -217,6 +217,16 @@ header, .spacer {
     }
   }
 
+  &-result {
+    &-count {
+      display: none;
+    }
+  }
+
+}
+
+.woocommerce .orderby {
+  display: none;
 }
 
 .single_add_to_cart_button {

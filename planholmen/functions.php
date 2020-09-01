@@ -14,3 +14,9 @@ function planholmen_single_title() {
 }
 
 add_action( 'woocommerce_single_product_summary', 'planholmen_single_title', 5 );
+
+function set_wc_column_count() {
+    wc_set_loop_prop('columns', 3);
+}
+
+add_action( 'woocommerce_loaded', 'set_wc_column_count');
