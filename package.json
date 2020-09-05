@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavkauman/planholmen-v2.git"
+    "url": "git+https://github.com/planholmen/wp-theme.git"
   },
   "keywords": [],
   "author": "Gustav Utke Kauman",
   "bugs": {
-    "url": "https://github.com/gustavkauman/planholmen-v2/issues"
+    "url": "https://github.com/planholmen/wp-theme/issues"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
