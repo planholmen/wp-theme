@@ -223,13 +223,19 @@ header, .spacer {
     }
   }
 
+  & ul.products li.product {
+      width: 46% !important;
+  }
+
 }
 
 .woocommerce .orderby {
   display: none;
 }
 
-.single_add_to_cart_button {
+.single_add_to_cart_button,
+.checkout-button,
+.woocommerce-checkout-payment button{
   background-color: $planholmen !important;
 }
 

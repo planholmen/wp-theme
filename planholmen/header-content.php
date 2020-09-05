@@ -6,7 +6,7 @@
                 <p class="ml-4">PLan Holmen</p>
             </div>
         </a>
-        <div class="nav block h-full float-right">
+        <div class="nav block flex h-full float-right">
             <div class="burger-menu h-full block flex items-center text-4xl md:hidden">
                 <ion-icon id="menu-icon" name="menu" class="block"></ion-icon>
                 <ion-icon id="close-icon" name="close" class="hidden"></ion-icon>
@@ -21,7 +21,13 @@
                 ]);
             ?>
             <?php if (is_woocommerce()) : ?>
-                <a href="<?= wc_get_cart_url() ?>">Kurv</a>
+            <div class="h-full md:block">
+                <ul class="h-full flex justify-end items-center">
+                    <li>
+                        <a href="<?= wc_get_cart_url() ?>">Kurv</a>
+                    </li>
+                </ul>
+            </div>
             <? endif; ?>
         </div>
     </header>
