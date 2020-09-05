@@ -22440,6 +22440,10 @@ header, .spacer {
   font-size: 1rem;
 }
 
+.woocommerce {
+  min-width: 600px;
+}
+
 .woocommerce-tabs {
   font-size: 0.85rem;
 }
