@@ -20,7 +20,7 @@
                     'depth' => 2
                 ]);
             ?>
-            <?php if (is_woocommerce()) : ?>
+            <?php if (is_woocommerce() || is_cart()) : ?>
             <div class="h-full md:block">
                 <ul class="h-full flex justify-end items-center">
                     <li>
