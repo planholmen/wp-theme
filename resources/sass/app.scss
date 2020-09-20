@@ -191,3 +191,61 @@ header, .spacer {
 .social-links li {
   padding: 0 15px;
 }
+
+// Web shop specifics
+.product_meta > span {
+  display: block;
+  font-size: 1rem;
+}
+
+.woocommerce {
+
+  min-width: 600px;
+
+  &-tabs {
+    font-size: 0.85rem;
+    & h2 {
+      display: none;
+    }
+  }
+
+  &-info {
+    display: none;
+  }
+
+  &-input {
+    &-wrapper input,
+    &-wrapper select {
+      padding: 10px 0;
+    }
+  }
+
+  &-result {
+    &-count {
+      display: none;
+    }
+  }
+
+  & ul.products li.product {
+      width: 46% !important;
+  }
+
+}
+
+.woocommerce .orderby {
+  display: none;
+}
+
+.single_add_to_cart_button,
+.checkout-button,
+.woocommerce-checkout-payment button{
+  background-color: $planholmen !important;
+}
+
+h1.product_title {
+  font-size: 2rem !important;
+}
+
+input#coupon_code {
+  width: 50%;
+}
