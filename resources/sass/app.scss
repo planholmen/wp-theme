@@ -215,8 +215,11 @@ header, .spacer {
 
   &-input {
     &-wrapper input,
-    &-wrapper select {
-      padding: 10px 0;
+    &-wrapper select,
+    &-wrapper textarea {
+      padding: 10px 10px;
+      border: 1px solid grey;
+      border-radius: 10px;
     }
   }
 
