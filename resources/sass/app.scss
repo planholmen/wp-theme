@@ -252,3 +252,10 @@ h1.product_title {
 input#coupon_code {
   width: 50%;
 }
+
+img.stripe-icon {
+  display: inline-block;
+  & .stripe-amex-icon {
+    display: none !important;
+  }
+}
