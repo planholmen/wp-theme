@@ -7,6 +7,7 @@
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="<?= (get_template_directory_uri() . '/assets/js/app.js'); ?>"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
