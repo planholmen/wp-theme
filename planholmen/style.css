@@ -22456,8 +22456,10 @@ header, .spacer {
   display: none;
 }
 
-.woocommerce-input-wrapper input, .woocommerce-input-wrapper select {
-  padding: 10px 0;
+.woocommerce-input-wrapper input, .woocommerce-input-wrapper select, .woocommerce-input-wrapper textarea {
+  padding: 10px 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
 }
 
 .woocommerce-result-count {
