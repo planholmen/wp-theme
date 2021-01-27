@@ -11,7 +11,4 @@
             </ul>
         </div>
     </div>
-    <div class="text-center py-8 pt-4">
-        <p>Made with <3 by <a href="https://github.com/gustavkauman">Gustav Utke Kauman</a></p>
-    </div>
 </footer>
