@@ -16,3 +16,10 @@ function planholmen_single_title() {
 add_action( 'woocommerce_single_product_summary', 'planholmen_single_title', 5 );
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// remove woocommerce backorder e-mails
+function remove_woocommerce_mails ($email_class) {
+	remove_action( 'woocommerce_product_on_backorder_notification', array( $email_class, 'backorder' ) );
+}
+
+add_action('woocommerce_email', 'remove_woocommerce_mails');
